@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,55,157,1) 35%, rgba(9,29,33,1) 100%);
+}
+
+.container-all, .container-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: radial-gradient(circle, rgba(14,4,192,1) 0%, rgba(52,52,218,1) 35%, rgba(14,4,192,1) 100%);
+    box-shadow: 0 8px 10px #000005 ;
+    border-radius: 15px;
+}
+
+.container-all {
+    height: 200px;
+    width: 550px;
+    max-width: 95vw;
+    padding: 20px;
+}
+
+.container-time, .container-date {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-time {
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+}
+
+.numbers {
+    font-size: 60px;
+}
+
+.time {
+    font-size: 26px;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+.container-bottom {
+    width: 150px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+}
+
+.container-date {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.date-number, .date {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 550px) {
+
+    .container-all {
+        height: 175px;
+        width: 450px;
+    }
+    
+    .container-time {
+        height: 100px;
+        width: 100px;
+    }
+
+    .numbers {
+        font-size: 40px;
+    }
+
+    .time {
+        font-size: 18px;
+    }
+}
